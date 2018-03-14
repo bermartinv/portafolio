@@ -1,7 +1,7 @@
 html,body {
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Montserrat', sans-serif;
 }
 
 *, *:after, *:before {
@@ -30,4 +30,213 @@ img,object,video,embed {
 .button {
   min-width: 48px;
   min-width: 48px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* H E A D E R */
+
+header {
+  display:flex;
+  flex-direction: column;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(#b5bdc8, #28343b);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  z-index:1;
+}
+
+.navicon {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.navicon:hover {
+  cursor: pointer;
+}
+
+.nav {
+  z-index: 100;
+  display: block;
+  position: absoulte;
+  -webkit-transform: translate(0 , -80px);
+  transform: translate(0 , -80px);
+  transition: transform 0.3s ease;
+}
+
+.nav.open {
+    -webkit-transform: translate(0, 80px);
+    transform: translate(0,80px);
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav_item {
+  border:solid medium white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.nav_item:hover {
+  cursor: pointer;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  z-index:10;
+  margin-top: -50px;
+}
+
+.title .udacity_image {
+  weight: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.title h1 {
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.me_image {
+  z-index:10;
+}
+
+/* S K I L L S */
+#skills {
+  border: solid thin red;
+  border-radius: 20px;
+  margin-top: 10px;
+  z-index:20;
+  margin-right: 10px;
+  margin-left:10px;
+}
+/* P R O J E C T S */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index:20;
+  margin-top: 100px;
+}
+
+/* ** * * * Projects Cards */
+.project_cards {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  border: solid thin #b5bdc8;
+  height: 30vh;
+  margin: 20px;
+  box-shadow: 4px 2px 5px 0px #28343b;
+}
+
+.project_cards:hover {
+  box-shadow: 4px 2px 0px 0px #28343b;
+}
+
+.project_cards_image {
+  display: flex;
+  max-width: 100%;
+  height: 80%;
+}
+
+.project_cards_image a {
+  height: 100%;
+}
+
+.project_cards_image img {
+  height: 100%;
+  width: 100%;
+}
+
+.project_cards_text {
+  display: flex;
+  flex-direction: column;  
+}
+
+.project_cards_text p, .project_cards_text a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.project_cards_text a {
+  margin-top: 3px;
+}
+
+/* F O O T E R */
+footer {
+  border-top: solid thick #28343b ;
+  background: #b5bdc8;
+}
+
+footer h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-facebook-square {
+  color: #4267B2;
+}
+
+.fa-twitter-square {
+  color: #2DAAE2;
+}
+
+.fa-codepen {
+  color: black;
+}
+
+/* ARROW UP BROWSER */
+
+#arrow{
+  position:fixed;
+  bottom: 40px;
+  right: 15px;
+  color: red;
+  display:none;
+  z-index: 9999;
+}
+
+#arrow:hover{
+  cursor:pointer;
 }
