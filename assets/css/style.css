@@ -272,7 +272,7 @@ footer h1 {
  header::after {
   transform: none;
   transform-origin: none;
-  height: 550px;
+  height: 600px;
   }
 
   #projects {
@@ -288,16 +288,24 @@ footer h1 {
 
 }
 
+@media screen and (min-width: 750px){
+  header::after {
+    height: 740px;
+  }
+}
+
 @media screen and (min-width: 1000px){
-  
-  
-  
+
   .title {
     font-size: 3em;
   }
 
   .navicon {
     display: none;
+  }
+
+  header::after {
+    height: 900px;
   }
 
   .nav {
