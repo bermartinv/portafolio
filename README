@@ -7,4 +7,4 @@ You can see some mockups that I made to practise and learn.
 But the project most importartant for me is http://bermartinv.github.io/css in this project I work with high level with css and 
 javascript. This project is a guide of CSS and there are tools for manipulate CSS feature. In a few seconds you can choose a value
 desired for a CSS feature.
-![CSS project](assets/images/css-readme.PNG "CSS project")
+![CSS project](https://github.com/bermartinv/portafolio/blob/master/assets/images/css_readme.PNG "CSS project")
