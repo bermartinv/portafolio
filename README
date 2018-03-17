@@ -1,4 +1,6 @@
-#portafolio
+# Portafolio
+
+## Information about portafolio
 This is my portafolio. As you can see I am passionate about frontend and I like to make layouts as best I can.
 I love working hard until I get the expected results.
 You can see some mockups that I made to practise and learn.
@@ -6,3 +8,4 @@ But the project most importartant for me is http://bermartinv.github.io/css in t
 javascript. This project is a guide of CSS and there are tools for manipulate CSS feature. In a few seconds you can choose a value
 desired for a CSS feature.
 ![CSS project](assets/images/css-readme.PNG "CSS project")
+[![Build Status](https://travis-ci.org/thoughtbot/factory_bot.svg)](http://travis-ci.org/thoughtbot/factory_bot?branch=master)
